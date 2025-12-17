@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VCF Number Adder</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VCF Number Adder</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-<h2>Tambah Nomor ke VCF</h2>
+  <div class="container">
+    <h2>Tambah Nomor ke VCF</h2>
 
+    <input type="file" id="vcfFile" accept=".vcf">
 
-<input type="file" id="vcfFile" accept=".vcf">
+    <div id="groups"></div>
 
+    <input type="text" id="outputName" placeholder="Nama file (kosong = nama asli)">
 
-<div id="groups"></div>
+    <div id="summary" class="small"></div>
+    <button id="download" class="btn">Download VCF</button>
+  </div>
 
-
-<input type="text" id="outputName" placeholder="Nama file (kosong = nama asli)">
-
-
-<button id="download" class="btn">Download VCF</button>
-</div>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
